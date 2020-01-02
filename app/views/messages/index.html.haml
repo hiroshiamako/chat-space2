@@ -3,10 +3,18 @@
   = render "main_chat"
 
 .header 
-  .header__sidebar_group_list
-  .side-bar_user-name
+.side-bar_user-name
+  .name
+  %p.name_user
+    amako hiroshi
+  %ul.menu
+    %li.user_edit
+      =link_to "#" do
+        = icon("fas","edit")
+    %li.user_group
+      =link_to "#" do
+        = icon("fas","edit")
 .contents
   .contents__message
   .chatmain_info
-  
   .chatmessage_form
