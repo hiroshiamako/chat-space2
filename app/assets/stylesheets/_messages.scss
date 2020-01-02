@@ -18,3 +18,21 @@
   background-color: blue;
   position: fixed;
 }
+
+.chatmain_info{
+  height: 100px;
+  width: calc(100vw - 300px);
+  background-color: yellow;
+  float:right;
+  position: fixed;
+}
+
+.chatmessage_form{
+  height: 90px;
+  width: calc(100vw - 300px);
+  background-color: red;
+  float:right;
+  position: fixed;
+  bottom:0px;
+  
+}
