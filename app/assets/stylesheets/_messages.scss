@@ -14,18 +14,23 @@
 
 .name{
   margin : 20px ;
-  &_user{
-    font-size: 16px;
-    color: white;
-    margin : 20px ;
-    display: flex;
+  height: 20px;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: red;
+  display: flex;
   }
-}
+
+
 .side-bar_user-name{
   height: 100px;
   width:300px;
   background-color: blue;
   position: fixed;
+  display: flex;
+  align-items: center;
 }
 
 .chatmain_info{
