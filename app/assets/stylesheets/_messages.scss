@@ -1,9 +1,20 @@
-.sidebar_user_name {
-  height: 100px;
-  width: 300px;
+.header {
+  height: 100vw;
+  width:300px;
   background-color: #253141;
   position: fixed;
 }
-* {
-  box-sizing: border-box;
+
+.contents{
+  height: 100vw;
+  width: calc(100vw - 300px);
+  background-color: orange;
+  float:right;
+}
+
+.side-bar_user-name{
+  height: 100px;
+  width:300px;
+  background-color: blue;
+  position: fixed;
 }
