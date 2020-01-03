@@ -2,7 +2,12 @@
   = render "side_bar"
   = render "main_chat"
 
-.header -#一番上左の黒いやつ
+.header
+  .header-group__name
+    %h1.header-group__name__site
+      teck camp
+    %h1.header-group__message__text
+      まだメッセージがありません
 
 .chat-side
   .side-header
@@ -18,6 +23,5 @@
           = icon("fas","cog")
 
 .contents
-  .contents__message
   .chatmain_info
   .chatmessage_form

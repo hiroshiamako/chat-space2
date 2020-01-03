@@ -4,8 +4,15 @@
   background-color: #253141;
   position: fixed;
   display: flex;
-  
+  top: 100px;
+  padding-top: 20px;
+  color:white;
 }
+
+.header-group__name{
+  margin-left: 20px;
+}
+
 
 .chat-side{
   height: 100px;
