@@ -2,18 +2,21 @@
   = render "side_bar"
   = render "main_chat"
 
-.header 
-.side-bar_user-name
-  .name
-    %p.name_user
-    amako hiroshi
-    %ul.menu
-    %li.user_edit
-      =link_to "#" do
-        = icon("fas","edit")
-    %li.user_group
-      =link_to "#" do
-        = icon("fas","cog")
+.header -#一番上左の黒いやつ
+
+.chat-side
+  .side-header
+  .side-header__box
+    %p.side-header__box__username
+      amako hiroshi
+    %ul.side-header__box__menu
+      %li.side-header__box__edit-user
+        =link_to "#" do
+          = icon("fas","edit")
+      %li.ide-header__box__cog
+        =link_to "#" do
+          = icon("fas","cog")
+
 .contents
   .contents__message
   .chatmain_info
