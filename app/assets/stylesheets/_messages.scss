@@ -89,7 +89,31 @@
   }
 }
 
+.contents__message2{
+  padding-top:45px;
+  &__name2{
+    font-size:16px;
+  }
 
+  &__day2{
+    font-size:11px;
+  }
+  
+  li {
+    float: left;
+    padding-right: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left:40px;
+  }
+
+  h3{
+    margin-top:32px;
+    margin-left:40px;
+    font-size:14px;
+  }
+}
 
 .chatmain__info{
   margin-top:35px;
@@ -116,6 +140,7 @@
   border: 1px solid blue;
   padding: 10px 20px;
   background-color:blue;
+  text-decoration: none;
   }
 }
 
