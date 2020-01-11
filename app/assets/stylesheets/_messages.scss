@@ -5,48 +5,66 @@
 
 .chat-side {
   width: 300px;
-  background-color: blue;
+  height: 100vh;
 }
 
 .chat-main {
   width: calc(100% - 300px);
+  height: 100vh;
   background-color: yellow;
 }
 
 .side-header {
-  background-color: orange;
+  background-color: #253141;
   height: 100px;
   display: flex;
   align-items: center;
 }
 
 .groups {
-  background-color: black;
+  background-color: #2f3e51;
   height: calc(100vh - 100px);
+  color: #ffffff;
+  padding:0 20px;
+  box-sizing: border-box;
+  &__name{
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  &__message{
+    padding-top: 5px;
+    font-size: 11px;
+  }
 }
 
 .main-header {
   height: 100px;
-  background-color: violet;
-  border-bottom: 1px solid violet;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
   display: flex;
   padding: 0 40px;
   align-items: center;
   justify-content: space-between;
   &__group{
-    color:white;
+    color: #333333;
     margin-bottom: 15px;
     font-size: 20px;
+  }
+  a{
+    color: #38aef0;
+    text-decoration: none;
   }
 }
 
 .messages {
-  background-color: green;
+  background-color: #fafafafa;
   height: calc(100vh - 190px);
+  padding-left: 40px;
+  box-sizing: border-box;
 }
 
 .form {
-  background-color: red;
+  background-color: #d2d2d2;
   height: 90px;
   padding: 20px 40px;
   box-sizing: border-box;
@@ -86,43 +104,44 @@
   height: 50px;
   padding: 0 30px;
   margin-left: 15px;
-  background-color: #eeeeee;
+  background-color: #38aef0;
   font-size: 16px;
   cursor: pointer;
-  color: #1a1d21;
+  color: #ffffff;
   box-sizing: border-box;
+  
 }
 
 
 .side-box {
   height: 20px;
   width: 260px;
-  background-color: #ffffff;
   margin: 0 20px;
   display: flex;
   justify-content: space-between;
   font-weight: bold;
   &__username{
-    color: #333333;
+    color: #ffffff;
+    font-size:16px;
   }
   &__menu{
     display: flex;
     list-style: none;
-  li{
-    a{
-      color: white;
-      text-decoration: none;
-      margin-left: 5px;
-    }
-  }  
-}
+    li{
+      a{
+        color: #ffffff;
+        text-decoration: none;
+        margin-left: 5px;
+      }
+    }  
+  }
 }
 
 .header-leftbox {
   margin-top: 20px;
   &__list{
     font-size: 12px;
-    color: #eeeeee;
+    color: #999999;
     display: flex;
     list-style: none;
     li{
@@ -133,8 +152,55 @@
 
 .edit-btn {
   font-size: 16px;
-  border: 1px solid #eeeeee;
-  padding: 15px 20px;
-  box-sizing: border-box;
+  border: 1px solid  #38aef0;
+  padding: 10px 15px;
+  box-sizing: border-box; 
 }
 
+.contents{
+  &__all__name{
+    padding-top: 35px;
+    font-size: 16px;
+    color: #333333;
+  }
+
+  &__all__date{
+    padding-top: 35px;
+    font-size: 12px;
+    color: #999999;
+  }
+ 
+  li{
+    float:left;
+  }
+
+  h3{
+     padding-top:63px; 
+     color: #434a54;
+     font-size: 14px;   
+  }
+}
+
+.contents2{
+  &__all2__name2{
+    padding-top: 60px;
+    font-size: 16px;
+    color: #333333;
+  }
+
+  &__all2__date2{
+    padding-top: 60px;
+    font-size: 12px;
+    color: #999999;
+  }
+ 
+  li{
+    float:left;
+  }
+
+  h3{
+     padding-top:86px; 
+     color: #434a54;
+     font-size: 14px;   
+  }
+}
