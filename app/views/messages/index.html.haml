@@ -1,0 +1,61 @@
+.wrapper
+  .chat-side
+    .side-header
+      .side-box
+        %p.side-box__username
+          amako hiroshi
+        %ul.side-box__menu
+          %li.side-box__menu__editusers
+            =link_to"#" do
+              =icon("fas","edit")
+            =link_to"#" do
+              =icon("fas","cog")
+    .groups
+      %h2.groups__name
+        techcamp
+      %h2.groups__message
+        まだメッセージがありません
+
+  .chat-main
+    .main-header
+      .header-leftbox
+        %h2.main-header__group
+          aaa
+        %ul.header-leftbox__list
+          %li.header-leftbox__list__name
+            Member: hiroshi
+      %a.main-header__edit
+        .edit-btn
+          =link_to"#" do
+            Edit
+          
+    .messages
+      .contents
+        %ul.contents__all
+          %li.contents__all__name
+            test
+          %li.contents__all__date
+            2019/11/20(Wed) 17:43:01
+        %h3.contents__message1
+          おはよう
+        .contents2
+          %ul.contents2__all2
+            %li.contents2__all2__name2
+              test
+            %li.contents2__all2__date2
+              2019/11/20(Wed) 17:43:01
+          %h3.contents2__message2
+          今日の天気雨です
+        
+          
+    .form
+      %form.new-message
+        .input-box
+          %input{type: "text", class: "input-box__text",placeholder: "type a message"}
+          %label{class: "input-box__image"}
+            =icon("fas","image")
+            %input{type:"file",class:"input-box__file"}
+        %input{type:"submit",class: "submit-btn"}
+          
+
+
